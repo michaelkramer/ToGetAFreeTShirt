@@ -699,7 +699,6 @@
   integrity sha512-kq6anf9JGjW8Nt5rYfEuGRaEAaH1mkv3Bbu6rYvLOpPh/RusSJXuKPEAoZ7L7gybZkchE8+NV5g9vKF4AGAtsA==
   dependencies:
     regenerator-runtime "^0.13.2"
-
 "@babel/template@^7.1.0", "@babel/template@^7.4.4", "@babel/template@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.6.0.tgz#7f0159c7f5012230dad64cca42ec9bdb5c9536e6"
@@ -5505,7 +5504,6 @@ semver-diff@^2.0.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
-
 semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
