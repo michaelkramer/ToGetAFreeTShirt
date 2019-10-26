@@ -5,17 +5,19 @@
 "use strict";
 
 //require("babel-register");
-
+const glob = require("glob");
 const express = require("express");
-const os = require("os");
-const MongoClient = require("mongodb").MongoClient;
 const assert = require("assert");
 const app = express();
 
 app.use(express.static("dist"));
-app.get("/api/getUsername", (req, res) =>
-  res.send({ username: os.userInfo().username })
-);
+
+glob("server/controllers/**/*.js", (err, files) => {
+  files.map((file) => {
+    // $FlowIgnore
+    require(file).routes(server); // eslint-disable-line
+  });
+});
 
 app.listen(3080, () => console.log("Listening on port 3080!"));
 
